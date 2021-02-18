@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Flo | Experiance </title>
+
+  <style>
+ul#menu li {
+  display:inline;
+  /*display: flex;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+}
+ul{
+  list-style: none;
+
+}
+a{
+  text-decoration: none;
+}
+section{
+  width: 100%;
+  height: 95vh;
+  background-image: url("asset/images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #8ac6d1;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 0px 5%;
+}
+nav ul{
+  display: flex;
+
+}
+nav ul li a{
+  margin: 30px;
+  font-family: myriad pro regular;
+  color:#ffffff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+footer{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #fae3d9;
+}
+footer p{
+  font-family: calibri;
+}
+/*footer p:nth-child(1){
+  font-size: 30px;
+  font-weight: bold;
+  color: #191919;
+  line-height: 10px;
+}*/
+footer p:nth-child(1){
+  font-size: 16px;
+  color: #7e7d7d;
+  width: 500px;
+  text-align: center;
+}
+
+.a1{
+  color: #8ac6d1;
+}
+.a1:hover{
+  color: #ca3e47;
+}
+
+.logo{
+  font-family: RoadTest;
+  color: #000000;
+  font-size: 22px;
+}
+.active{
+  font-weight: bold;
+  color: #2d2a2a;
+
+}
+.text-conatiner p:nth-child(1){
+  font-family: calibri;
+  font-weight: bold;
+  color: #6d6d6d;
+  font-size: 22px;
+
+
+  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.text-conatiner p:nth-child(2){
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.text-conatiner p:nth-child(3){
+  font-family: myriad pro regular;
+  color: #403e3e;
+  font-size: 30px;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.text-conatiner p{
+  line-height: 0px;
+  margin: 30px 0px 25px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.text-conatiner{
+  /*position: absolute;*/
+/*  left: 13%;*/
+  top: 20%;
+  /*transform: translate(-13%,-42%);*/
+  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.text-conatiner button{
+  width: 130px;
+  height: 42px;
+  border-radius: 10px;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 0px 10px;
+}
+.hire-btn{
+  /*border:2px solid #8ac6d1;
+  color: #8ac6d1;*/
+  border:2px solid #ffffff;
+  background-color: #ffb6b9;
+  color: #ffffff;
+  
+}
+.down-cv{
+  background-color: #8ac6d1;
+  color: #ffffff;
+  border:1px solid #ffffff;
+}
+button:active{
+  transform: scale(1.1);
+}
+.model{
+  height: 560px;
+  position: absolute;
+  bottom: 40px;
+  left: 70%;
+  transform: translateX(-70%);
+}
+.about-conatiner{
+  width: 80%;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  display: flex;
+  margin: 0% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+.about-conatiner img{
+  height: 250px;
+}
+.about-text{
+  width: 550px;
+}
+.about-text p:nth-child(1){
+  color: #403e3e;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 0px;
+}
+.about-text p:nth-child(2){
+  color: #3e3d3d;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 5px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.about-text p:nth-child(3),
+.about-text p:nth-child(4){
+  color: #7e7d7d;
+  font-family: calibri;
+  font-size: 16px;
+}
+.about-text button{
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+  outline: none;
+  border:none;
+  font-family: calibri;
+  background-color: #8ac6d1;
+}
+
+/*............*/
+.about-conatiner1{
+  width: 80%;
+  height: 530px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  display: flex;
+  margin: 3% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+.about-conatiner1 img{
+  height: 250px;
+}
+.about-text1{
+  width: 550px;
+}
+.about-text1 p:nth-child(1){
+  color: #403e3e;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 0px;
+}
+.about-text1 p:nth-child(2){
+  color: #3e3d3d;
+  font-family: myriad pro;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 5px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.about-text1 p:nth-child(3),
+.about-text1 p:nth-child(4){
+  color: #7e7d7d;
+  font-family: calibri;
+  font-size: 16px;
+}
+.about-text1 button{
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+  outline: none;
+  border:none;
+  font-family: calibri;
+  background-color: #8ac6d1;
+}
+
+
+.social-icons a{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ac6d1;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+.social-icons{
+  display: flex;
+}
+.copyright{
+  color: #565555;
+  font-size: 13px;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+.social-icons i{
+  color: #000000;
+}
+.social-icons a:hover,
+.a-social-b a:hover{
+  background-color: #ffb6b9; 
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  transition: all ease 0.5s;
+}
+.social-icons a:hover i,
+.a-social-b a:hover i{
+  color: #ffffff;
+  transition: all ease 0.5s;
+}
+.a-social-b{
+  position: fixed;
+  top:50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.a-social-b a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  line-height:0px;
+  background-color: #ffffff;
+  border:1px solid #cbcbcb;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+.a-social-b i{
+  color: #0d3f67;
+  font-size: 20px;
+}
+.cd-h-timeline__filling-line{
+  --cd-color-1: hsl(0, 0%, 22%);
+    --cd-color-1-h: 0;
+    --cd-color-1-s: 0%;
+    --cd-color-1-l: 22%;
+    --cd-color-2: hsl(349deg 70% 68%);
+    --cd-color-2-h: 74;
+    --cd-color-2-s: 93%;
+    --cd-color-2-l: 32%;
+    --cd-color-3: hsl(0, 0%, 97%);
+    --cd-color-3-h: 0;
+    --cd-color-3-s: 0%;
+    --cd-color-3-l: 97%;
+    --font-primary: 'Fira Sans', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+}
+.cd-h-timeline__dates{
+  --cd-color-1: hsl(0, 0%, 22%);
+    --cd-color-1-h: 0;
+    --cd-color-1-s: 0%;
+    --cd-color-1-l: 22%;
+    --cd-color-2: hsl(349deg 70% 68%);
+    --cd-color-2-h: 74;
+    --cd-color-2-s: 93%;
+    --cd-color-2-l: 32%;
+    --cd-color-3: hsl(0, 0%, 97%);
+    --cd-color-3-h: 0;
+    --cd-color-3-s: 0%;
+    --cd-color-3-l: 97%;
+    --font-primary: 'Fira Sans', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+}
+.text-replace,.cd-h-timeline__navigation,.cd-h-timeline__navigation--next{
+  --cd-color-1: hsl(0, 0%, 22%);
+    --cd-color-1-h: 0;
+    --cd-color-1-s: 0%;
+    --cd-color-1-l: 22%;
+    --cd-color-2: hsl(349deg 70% 68%);
+    --cd-color-2-h: 74;
+    --cd-color-2-s: 93%;
+    --cd-color-2-l: 32%;
+    --cd-color-3: hsl(0, 0%, 97%);
+    --cd-color-3-h: 0;
+    --cd-color-3-s: 0%;
+    --cd-color-3-l: 97%;
+    --font-primary: 'Fira Sans', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+}
+</style>
+
+
+</head>
+<body>
+
+ 
+    <nav>
+      <a href="#" class="logo"><img src="asset/images/logo1.png"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Team</a></li>
+      </ul>
+    </nav>
+    <!-- <img src="asset/images/flo.png" class="model" alt="model"> -->
+ 
+
+  <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
+    <br>
+    <br>
+    <br>
+<div class="about-conatiner">
+    <div class="cd-h-timeline__container container">
+      <div class="cd-h-timeline__dates">
+        <div class="cd-h-timeline__line">
+          <ol>
+            <li><a href="#0" data-date="16/01/2014" class="cd-h-timeline__date cd-h-timeline__date--selected">Apprentice 2013</a></li>
+            <li><a href="#0" data-date="16/01/2014" class="cd-h-timeline__date">Apprentice 2019</a></li>
+            <li><a href="#0" data-date="28/02/2014" class="cd-h-timeline__date">Fulltime 2015 - 2016</a></li>
+            <li><a href="#0" data-date="20/04/2014" class="cd-h-timeline__date">Fulltime 2017 - 2020</a></li>
+            <li><a href="#0" data-date="20/05/2014" class="cd-h-timeline__date">Fulltime 2020 - 2021</a></li>
+            <li><a href="#0" data-date="09/07/2014" class="cd-h-timeline__date">Freelance 2020</a></li>
+            <li><a href="#0" data-date="09/07/2014" class="cd-h-timeline__date">Freelance 2021</a></li>
+
+          </ol>
+
+          <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
+        </div> <!-- .cd-h-timeline__line -->
+      </div> <!-- .cd-h-timeline__dates -->
+        
+      <ul>
+        <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
+        <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
+      </ul>
+    </div> <!-- .cd-h-timeline__container -->
+
+    <div class="cd-h-timeline__events">
+      <ol>
+        <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h3>Apprentice Experiance 2013</h3>
+            <em class="cd-h-timeline__event-date">January 16th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Human Resource
+              | PT. GS Astra Karawang Plant
+              (Edit Photo with Corel Draw X4, Make
+              a letter for Employee)
+            </p>
+            <em class="cd-h-timeline__event-date">January 16th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Lalu Lintas
+              Keimigrasian and Pengawasan dan Penindakan
+              Keimigrasian
+              | Immigration Office
+              (Checking a Document Requesting Passport,
+              archiving document)
+            </p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h3>Apprentice Experiance 2019</h3>
+            <em class="cd-h-timeline__event-date">February 28th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              PT Docotel Teknologi | Designer and Web Engineer | Designing and Build web Application using PHP Yii2
+            </p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h3>Fulltime 2015 - 2016</h3>
+            <em class="cd-h-timeline__event-date">March 20th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Technical Writer | PT.Sandika Cahaya Mandiri
+              (User Manual Document, Functional Specification
+              Document, Make diagram Sequence of The Function,
+              Use Case Diagram, Flowchart)
+            </p>
+            <em class="cd-h-timeline__event-date">March 20th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Software Quality Assurance | PT.
+              Sandika Cahaya Mandiri | (Make a regression Test Case, Testing with Postman,
+              Make a UAT Test Case (Negative and Positive Test
+              Case) , Sending Error Log of Program, Stress Test with
+              Jmeter. )
+            </p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h3>Fulltime 2017 - 2020</h3>
+            <em class="cd-h-timeline__event-date">May 20th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Software Quality Assurance | PT.
+              Docotel Teknologi | (Make a SIT Document, UAT Document, Test Case
+              Document, Test Report, Learn Katalon Testing, Make a
+              Manual Book for User, Mockup with balsamiq,
+              Understand about SRS Document, Stress Test)
+            </p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h3>Fulltime 2020 - 2021</h3>
+            <em class="cd-h-timeline__event-date">July 9th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Software Quality Assurance Engineer | Buku
+              Warung | (Make a SIT Document, Test Report, Manual Testing,
+              Mobile UI Automation Testing, API Testing, )
+            </p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h3>Freelance 2020</h3>
+            <em class="cd-h-timeline__event-date">July 9th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Software Quality Assurance | Freelancer
+              (Make a SIT Document, Test Report, Understand about
+              SRS Document)
+            </p>
+          </div>
+        </li>
+
+        <li class="cd-h-timeline__event text-component">
+          <div class="cd-h-timeline__event-content container">
+            <h3>Freelance 2021</h3>
+            <em class="cd-h-timeline__event-date">July 9th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              UI/UX | Freelancer | Kandang Ternak Apps | 
+              Make a Prototype for mobile apps
+            </p>
+            <em class="cd-h-timeline__event-date">July 9th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Software Quality Assurance | Freelancer
+              Make a SIT Document, Test Report, Manual Testing
+            </p>
+            <em class="cd-h-timeline__event-date">July 9th, 2014</em>
+            <p class="cd-h-timeline__event-description color-contrast-medium"> 
+              Technical Writer | Freelancer
+              Make FSD Document, Make User Manual Document
+            </p>
+          </div>
+        </li>
+
+        
+      </ol>
+    </div>
+    </div> <!-- .cd-h-timeline__events -->
+  </section>
+
+  <footer>
+    <!-- <p>Thank You</p> -->
+    <p> Now, You can see the rare gems <a href="#" class="a1">Here</a> Let me now If you have any question. 
+      And last, This is my Blog and My Art Work <a href="#" class="a1">Art Work and Blog</a>
+    </p>
+      <div class="social-icons">
+<!--        <a href="#"><li class="fab fa-facebook-f"></li></a>
+        <a href="#"><li class="fab fa-twitter"></li></a> -->
+        <a href="#"><li class="fab fa-youtube"></li></a>
+        <a href="#"><li class="fab fa-linkedin"></li></a>
+      </div>
+      
+  </footer>
+  <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="assets/js/swipe-content.js"></script> <!-- A Vanilla JavaScript plugin to detect touch interactions -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
